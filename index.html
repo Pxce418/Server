@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Únete a NGDPS - Servidor de Discord</title>
+    
+    <meta property="og:title" content="Servidor Oficial NGDPS - ¡Únete Ahora!">
+    <meta property="og:description" content="¡Únete a la comunidad NGDPS! Juega, chatea y sé el primero en conocer las novedades.">
+    <meta name="theme-color" content="#5865F2">
+
+    <style>
+        /* --- ESTILOS VISUALES --- */
+        :root {
+            --discord-blurple: #5865F2;
+            --discord-dark: #23272a;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--discord-dark);
+            /* Fondo de ejemplo: puedes cambiar la URL por una imagen de Geometry Dash o abstracta */
+            background-image: url('https://images.unsplash.com/photo-1542435503-9d4133496924?fit=crop&w=1920&q=80'); 
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay; /* Oscurece la imagen de fondo */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            overflow: hidden;
+        }
+
+        .card {
+            background: rgba(44, 47, 51, 0.95);
+            padding: 50px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            max-width: 400px;
+            width: 90%;
+            border-top: 5px solid var(--discord-blurple);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        h1 { margin: 0; font-size: 2rem; margin-bottom: 10px; }
+        p { color: #b9bbbe; margin-bottom: 30px; font-size: 1.1rem; }
+
+        .logo-img {
+            /* 💥 ¡ADVERTENCIA! DEBES REEMPLAZAR ESTA URL CON LA DIRECCIÓN PÚBLICA DE TU LOGO. 💥 */
+            /* Esta URL es solo un marcador de posición para el diseño. */
+            content: url('http://googleusercontent.com/image_generation_content/0');
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 4px solid var(--discord-blurple);
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+
+        .btn-discord {
+            display: block;
+            background-color: var(--discord-blurple);
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: transform 0.2s, background-color 0.2s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        .btn-discord:hover {
+            background-color: #4752c4;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: #72767d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="logo-img" alt="Logo del Servidor NGDPS"></div>
+        
+        <h1>¡Te han invitado a NGDPS!</h1>
+        <p>Únete a la comunidad oficial. Juega, chatea y sé el primero en conocer las novedades.</p>
+
+        <a href="https://discord.gg/Z4jaBmx2Fw" class="btn-discord">
+            Unirse al Servidor
+        </a>
+
+        <div class="footer">
+            Serás redirigido a Discord app
+        </div>
+    </div>
+
+</body>
+</html>
